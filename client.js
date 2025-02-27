@@ -16,6 +16,19 @@ const connect = function () {
   conn.on("connect", () => {
     console.log("Successfully connected to game server");
     conn.write("Name: JMP");
+
+    // setInterval(() => {
+    //   conn.write("Move: up");
+    //   setInterval(() => {
+    //     conn.write("Move: left");
+    //     setInterval(() => {
+    //       conn.write("Move: down");
+    //       setInterval(() => {
+    //         conn.write("Move: right");
+    //       }, 50);
+    //     }, 50);
+    //   }, 50);
+    // }, 50);
   });
 
   return conn;
